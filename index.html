@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenangan Masa SMA - Galeri Foto Kenangan</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Particle Background -->
+    <div class="particles" id="particles"></div>
+    
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-content">
+            <h1 class="glow-text">📸 Kenangan ppmp_boyys</h1>
+            <p class="subtitle">"Setiap foto menyimpan cerita yang tak terlupakan"</p>
+            <div class="scroll-indicator">
+                <span>Scroll ke bawah</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>kenagan ppmp_boyys</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="active">Beranda</a></li>
+                <li><a href="#gallery">Galeri</a></li>
+                <li><a href="#memories">Kenangan</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="year-badge">2022 - 2025</div>
+            <h2>Perjalanan Tak Terlupakan</h2>
+            <p>Tiga tahun penuh suka, duka, tawa, dan air mata. Bersama kita ukir cerita terindah.</p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-count="1095">0</span>
+                    <span class="stat-label">Hari Kebersamaan</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-count="-">0</span>
+                    <span class="stat-label">Foto Kenangan</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-count="13">0</span>
+                    <span class="stat-label">Teman Seperjuangan</span>
+                </div>
+            </div>
+            <button class="btn-explore" onclick="scrollToGallery()">
+                <i class="fas fa-images"></i> Jelajahi Kenangan
+            </button>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-camera-retro"></i>
+                    Galeri Kenangan
+                </h2>
+                <p class="section-subtitle">Klik foto untuk melihat cerita di baliknya</p>
+            </div>
+            
+            <!-- Filter Buttons -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="academic">Akademik</button>
+                <button class="filter-btn" data-filter="event">Event</button>
+                <button class="filter-btn" data-filter="friendship">Persahabatan</button>
+                <button class="filter-btn" data-filter="graduation">Kelulusan</button>
+            </div>
+            
+            <!-- Gallery Grid -->
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Foto akan ditambahkan melalui JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Memories Section -->
+    <section id="memories" class="memories-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Kenangan Terindah
+                </h2>
+                <p class="section-subtitle">Cerita yang tertulis dalam setiap momen</p>
+            </div>
+            
+            <div class="memories-slider">
+                <div class="slider-container" id="memoriesSlider">
+                    <!-- Memory cards akan ditambahkan melalui JavaScript -->
+                </div>
+                <div class="slider-nav">
+                    <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Tentang Kami</h2>
+                    <p>Website ini dibuat untuk mengabadikan momen-momen indah selama masa SMA. Setiap foto memiliki cerita dan kenangan yang tak ternilai harganya.</p>
+                    <p>Dari hari pertama masuk hingga saat kelulusan, perjalanan ini mengajarkan kami arti persahabatan, perjuangan, dan impian.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-smile"></i>
+                            <span>13 Anggota</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>3 Tahun Perjalanan</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>SMA Negeri 1 WANGI-WANGI</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="ai_retouch_202503170051578899.jpg" alt="School Memory">
+                    <div class="image-caption">Kenangan yang abadi</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-envelope"></i>
+                    Bagikan Kenanganmu
+                </h2>
+                <p class="section-subtitle">Kamu juga bisa berbagi cerita dan fotomu di sini</p>
+            </div>
+            
+            <div class="contact-form">
+                <form id="shareMemoryForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Nama lengkap" required>
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Email" required>
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" placeholder="Tulis cerita kenanganmu..." required></textarea>
+                        <i class="fas fa-pen"></i>
+                    </div>
+                    <div class="form-group">
+                        <input type="file" id="photo" accept="image/*">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <button type="submit" class="btn-submit">
+                        <i class="fas fa-paper-plane"></i> Bagikan Kenangan
+                    </button>
+                </form>
+                <div id="formMessage" class="form-message"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-graduation-cap"></i> SMA Kenangan</h3>
+                    <p>Mengabadikan setiap momen indah masa remaja yang tak terlupakan.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/ppmp_boyy?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Beranda</a></li>
+                        <li><a href="#gallery">Galeri</a></li>
+                        <li><a href="#memories">Kenangan</a></li>
+                        <li><a href="#about">Tentang</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Kontak</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> -@sma.com</li>
+                        <li><i class="fas fa-phone"></i> +62 821-9267-1830</li>
+                        <li><i class="fas fa-map-marker-alt"></i> WAKATOBI, Indonesia</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Kenangan Masa SMA. All rights reserved. Made with <i class="fas fa-bars"></i> untuk kenangan terindah.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal for photo detail -->
+    <div id="photoModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <img id="modalImage" src="" alt="">
+                <div class="modal-info">
+                    <h3 id="modalTitle"></h3>
+                    <p id="modalDescription"></p>
+                    <div class="modal-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span id="modalDate"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to top button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
